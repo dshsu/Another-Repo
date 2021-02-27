@@ -27,7 +27,7 @@ class ToDoApp extends Component{
 }
 class HeaderComponent extends Component{
     render(){
-        const isUserLoggedIn = AuthenticationService.isUserLoggedIn;
+        const isUserLoggedIn = AuthenticationService.isUserLoggedIn();
         console.log(isUserLoggedIn);
         return(
             <header>
